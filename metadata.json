@@ -1,0 +1,6 @@
+{
+  "name": "Adhul Marketo India",
+  "description": "Premium industrial gases and engineering equipment manufacturer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

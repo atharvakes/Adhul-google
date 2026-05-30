@@ -1,0 +1,334 @@
+<svg viewBox="0 0 500 650" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient for the Metal Panel -->
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eaeaea"/>
+      <stop offset="50%" stop-color="#d3d5d6"/>
+      <stop offset="100%" stop-color="#b8babc"/>
+    </linearGradient>
+
+    <!-- Stainless Steel Cylindrical Components Gradient -->
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55585a"/>
+      <stop offset="15%" stop-color="#8e9092"/>
+      <stop offset="50%" stop-color="#e6e7e8"/>
+      <stop offset="85%" stop-color="#8e9092"/>
+      <stop offset="100%" stop-color="#55585a"/>
+    </linearGradient>
+
+    <!-- Braided Flexible Hoses Gradient -->
+    <linearGradient id="braidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d6e71"/>
+      <stop offset="50%" stop-color="#bcbec0"/>
+      <stop offset="100%" stop-color="#414042"/>
+    </linearGradient>
+
+    <!-- Pipes Gradient -->
+    <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#414042"/>
+      <stop offset="30%" stop-color="#a7a9ac"/>
+      <stop offset="70%" stop-color="#e6e7e8"/>
+      <stop offset="100%" stop-color="#58595b"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="112%" height="112%">
+      <feDropShadow dx="3" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="10" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="pipeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Off-white Studio Background Grid -->
+  <rect width="100%" height="100%" fill="#f4f5f6"/>
+  <g stroke="#e6e7e8" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="650"/>
+    <line x1="100" y1="0" x2="100" y2="650"/>
+    <line x1="150" y1="0" x2="150" y2="650"/>
+    <line x1="200" y1="0" x2="200" y2="650"/>
+    <line x1="250" y1="0" x2="250" y2="650"/>
+    <line x1="300" y1="0" x2="300" y2="650"/>
+    <line x1="350" y1="0" x2="350" y2="650"/>
+    <line x1="400" y1="0" x2="400" y2="650"/>
+    <line x1="450" y1="0" x2="450" y2="650"/>
+    <line x1="0" y1="50" x2="500" y2="50"/>
+    <line x1="0" y1="100" x2="500" y2="100"/>
+    <line x1="0" y1="150" x2="500" y2="150"/>
+    <line x1="0" y1="200" x2="500" y2="200"/>
+    <line x1="0" y1="250" x2="500" y2="250"/>
+    <line x1="0" y1="300" x2="500" y2="300"/>
+    <line x1="0" y1="350" x2="500" y2="350"/>
+    <line x1="0" y1="400" x2="500" y2="400"/>
+    <line x1="0" y1="450" x2="500" y2="450"/>
+    <line x1="0" y1="500" x2="500" y2="500"/>
+    <line x1="0" y1="550" x2="500" y2="550"/>
+    <line x1="0" y1="600" x2="500" y2="600"/>
+  </g>
+
+  <!-- Ground Shadow for the whole panel -->
+  <rect x="70" y="50" width="360" height="550" rx="4" fill="#000000" opacity="0.1" filter="url(#panelShadow)"/>
+
+  <!-- Vertical Grey Metal Panel Board -->
+  <rect x="70" y="50" width="360" height="550" rx="4" fill="url(#panelGrad)" stroke="#8e9092" stroke-width="2"/>
+
+  <!-- Panel Corner Bolts/Rivets -->
+  <!-- Top Left Rivet -->
+  <circle cx="85" cy="65" r="5" fill="#58595b" stroke="#bcbec0" stroke-width="1.5"/>
+  <circle cx="84" cy="64" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <!-- Top Right Rivet -->
+  <circle cx="415" cy="65" r="5" fill="#58595b" stroke="#bcbec0" stroke-width="1.5"/>
+  <circle cx="414" cy="64" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <!-- Bottom Left Rivet -->
+  <circle cx="85" cy="585" r="5" fill="#58595b" stroke="#bcbec0" stroke-width="1.5"/>
+  <circle cx="84" cy="584" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <!-- Bottom Right Rivet -->
+  <circle cx="415" cy="585" r="5" fill="#58595b" stroke="#bcbec0" stroke-width="1.5"/>
+  <circle cx="414" cy="584" r="1.5" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Horizontal Mounting Flanges/Pipes (Left Side Entry) -->
+  <!-- Upper Flange Plate & Bolts -->
+  <g filter="url(#shadow)">
+    <!-- Connection Tube -->
+    <rect x="35" y="195" width="45" height="18" fill="url(#pipeGrad)"/>
+    <!-- Outer Flange Disc -->
+    <rect x="25" y="150" width="12" height="106" rx="3" fill="url(#steelGrad)" stroke="#414042" stroke-width="1"/>
+    <!-- Front face ellipse for perspective depth -->
+    <ellipse cx="25" cy="203" rx="4" ry="53" fill="#8e9092"/>
+    <!-- Bolts on Flange -->
+    <circle cx="31" cy="165" r="4" fill="#d1d3d4" stroke="#414042" stroke-width="1"/>
+    <circle cx="31" cy="241" r="4" fill="#d1d3d4" stroke="#414042" stroke-width="1"/>
+  </g>
+
+  <!-- Lower Flange Plate & Bolts -->
+  <g filter="url(#shadow)">
+    <!-- Connection Tube -->
+    <rect x="35" y="445" width="45" height="18" fill="url(#pipeGrad)"/>
+    <!-- Outer Flange Disc -->
+    <rect x="25" y="400" width="12" height="106" rx="3" fill="url(#steelGrad)" stroke="#414042" stroke-width="1"/>
+    <!-- Front face ellipse for depth -->
+    <ellipse cx="25" cy="453" rx="4" ry="53" fill="#8e9092"/>
+    <!-- Bolts on Flange -->
+    <circle cx="31" cy="415" r="4" fill="#d1d3d4" stroke="#414042" stroke-width="1"/>
+    <circle cx="31" cy="491" r="4" fill="#d1d3d4" stroke="#414042" stroke-width="1"/>
+  </g>
+
+  <!-- Horizontal Connection Tubing to the main vertical pipe -->
+  <g filter="url(#pipeShadow)">
+    <rect x="80" y="198" width="180" height="12" fill="url(#pipeGrad)"/>
+    <rect x="80" y="448" width="180" height="12" fill="url(#pipeGrad)"/>
+  </g>
+
+  <!-- T-Junction Blocks & Nuts (Connecting horizontal & vertical pipes) -->
+  <g filter="url(#shadow)">
+    <!-- Upper Junction Block -->
+    <rect x="250" y="188" width="20" height="32" rx="2" fill="url(#steelGrad)" stroke="#414042"/>
+    <circle cx="260" cy="204" r="3" fill="#231f20"/>
+    <!-- Lower Junction Block -->
+    <rect x="250" y="438" width="20" height="32" rx="2" fill="url(#steelGrad)" stroke="#414042"/>
+    <circle cx="260" cy="454" r="3" fill="#231f20"/>
+  </g>
+
+  <!-- Vertical Stainless Tubing (The central manifold line) -->
+  <g filter="url(#pipeShadow)">
+    <rect x="254" y="100" width="12" height="460" fill="url(#pipeGrad)"/>
+  </g>
+
+  <!-- VALVES & CONTROLS -->
+  <!-- Selector/Ball Valve 1 (Upper central line) -->
+  <g filter="url(#shadow)">
+    <rect x="246" y="140" width="28" height="20" rx="3" fill="url(#steelGrad)" stroke="#58595b"/>
+    <!-- Oval control handle (Black, pointed right) -->
+    <ellipse cx="260" cy="150" rx="22" ry="10" fill="#231f20"/>
+    <circle cx="260" cy="150" r="4" fill="#bcbec0"/>
+  </g>
+
+  <!-- Selector/Ball Valve 2 (Lower central line) -->
+  <g filter="url(#shadow)">
+    <rect x="246" y="500" width="28" height="20" rx="3" fill="url(#steelGrad)" stroke="#58595b"/>
+    <!-- Oval control handle (Black, pointed right) -->
+    <ellipse cx="260" cy="510" rx="22" ry="10" fill="#231f20"/>
+    <circle cx="260" cy="510" r="4" fill="#bcbec0"/>
+  </g>
+
+  <!-- Large Center Heavy Duty Valve Block -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="300" width="40" height="40" rx="4" fill="url(#steelGrad)" stroke="#414042" stroke-width="1.5"/>
+    <rect x="235" y="315" width="50" height="10" fill="#a7a9ac"/>
+    <!-- Distinctive Large Handle (pointed down-right) -->
+    <path d="M 260 320 L 315 345 C 322 348, 318 358, 310 355 L 260 325 Z" fill="#231f20"/>
+    <circle cx="260" cy="320" r="7" fill="#808285" stroke="#414042"/>
+  </g>
+
+  <!-- ANALOG PRESSURE DIAL GAUGES -->
+  <!-- Upper Gauge -->
+  <g filter="url(#shadow)">
+    <!-- Support Block & Connector Pipe -->
+    <rect x="194" y="150" width="12" height="50" fill="url(#pipeGrad)"/>
+    <rect x="188" y="180" width="24" height="12" fill="url(#steelGrad)"/>
+    
+    <!-- Outer Gauge Ring -->
+    <circle cx="200" cy="130" r="34" fill="url(#steelGrad)" stroke="#3e4142" stroke-width="1.5"/>
+    <!-- Matte Inner Shell -->
+    <circle cx="200" cy="130" r="31" fill="#414042"/>
+    <!-- Dial White Face -->
+    <circle cx="200" cy="130" r="28" fill="#ffffff"/>
+    
+    <!-- Markings Details -->
+    <path d="M 200 102 L 200 106 M 228 130 L 224 130 M 172 130 L 176 130 M 200 158 L 200 154" stroke="#414042" stroke-width="1.5"/>
+    <path d="M 180 110 L 183 113 M 220 110 L 217 113 M 180 150 L 183 147 M 220 150 L 217 147" stroke="#58595b" stroke-width="1"/>
+    
+    <!-- Red Accent Zone -->
+    <path d="M 218 112 A 26 26 0 0 1 226 130" fill="none" stroke="#ed1c24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Text on Dial Face -->
+    <text x="200" y="122" font-family="sans-serif" font-weight="900" font-size="5" text-anchor="middle" fill="#231f20">bar</text>
+    <text x="200" y="144" font-family="sans-serif" font-weight="500" font-size="4" text-anchor="middle" fill="#939598">Adhul Marketo</text>
+
+    <!-- Dial Pointer Needle -->
+    <line x1="200" y1="130" x2="183" y2="114" stroke="#e61d25" stroke-width="2.5" stroke-linecap="round" filter="url(#shadow)"/>
+    <circle cx="200" cy="130" r="4.5" fill="#414042"/>
+    <circle cx="200" cy="130" r="2.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Lower Gauge -->
+  <g filter="url(#shadow)">
+    <!-- Support Block & Connector Pipe -->
+    <rect x="194" y="380" width="12" height="70" fill="url(#pipeGrad)"/>
+    <rect x="188" y="430" width="24" height="12" fill="url(#steelGrad)"/>
+    
+    <!-- Outer Gauge Ring -->
+    <circle cx="200" cy="370" r="34" fill="url(#steelGrad)" stroke="#3e4142" stroke-width="1.5"/>
+    <!-- Matte Inner Shell -->
+    <circle cx="200" cy="370" r="31" fill="#414042"/>
+    <!-- Dial White Face -->
+    <circle cx="200" cy="370" r="28" fill="#ffffff"/>
+    
+    <!-- Markings Details -->
+    <path d="M 200 342 L 200 346 M 228 370 L 224 370 M 172 370 L 176 370 M 200 398 L 200 394" stroke="#414042" stroke-width="1.5"/>
+    <path d="M 180 350 L 183 353 M 220 350 L 217 353 M 180 390 L 183 387 M 220 390 L 217 387" stroke="#58595b" stroke-width="1"/>
+    
+    <!-- Red Accent Zone -->
+    <path d="M 218 352 A 26 26 0 0 1 226 370" fill="none" stroke="#ed1c24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Text on Dial Face -->
+    <text x="200" y="362" font-family="sans-serif" font-weight="900" font-size="5" text-anchor="middle" fill="#231f20">Psi</text>
+    <text x="200" y="384" font-family="sans-serif" font-weight="500" font-size="4" text-anchor="middle" fill="#939598">Adhul Marketo</text>
+
+    <!-- Dial Pointer Needle (pointing higher pressure) -->
+    <line x1="200" y1="370" x2="215" y2="350" stroke="#e61d25" stroke-width="2.5" stroke-linecap="round" filter="url(#shadow)"/>
+    <circle cx="200" cy="370" r="4.5" fill="#414042"/>
+    <circle cx="200" cy="370" r="2.5" fill="#ffffff"/>
+  </g>
+
+  <!-- VERTICAL SAMPLING STAINLESS CYLINDER / BOMB (Right Side) -->
+  <g filter="url(#shadow)">
+    <!-- Right Horizontal Support Arms -->
+    <rect x="290" y="235" width="50" height="10" fill="url(#steelGrad)" stroke="#414042"/>
+    <rect x="290" y="405" width="50" height="10" fill="url(#steelGrad)" stroke="#414042"/>
+
+    <!-- Cylinder brackets -->
+    <rect x="330" y="230" width="10" height="20" rx="1" fill="#414042"/>
+    <rect x="330" y="400" width="10" height="20" rx="1" fill="#414042"/>
+
+    <!-- Cylindrical Main Body -->
+    <rect x="340" y="200" width="56" height="250" rx="7" fill="url(#steelGrad)" stroke="#414042" stroke-width="1.2"/>
+    <!-- Dome top & caps -->
+    <path d="M 340 200 Q 368 185 396 200 Z" fill="url(#steelGrad)" stroke="#414042" stroke-width="1"/>
+    <!-- Dome bottom & caps -->
+    <path d="M 340 450 Q 368 465 396 450 Z" fill="url(#steelGrad)" stroke="#414042" stroke-width="1.1"/>
+
+    <!-- Cylinder Heavy Metal Support Bands with Screws/Bolts -->
+    <rect x="336" y="222" width="64" height="12" rx="2" fill="url(#steelGrad)" stroke="#58595b"/>
+    <circle cx="342" cy="228" r="2.5" fill="#231f20"/>
+    <circle cx="394" cy="228" r="2.5" fill="#231f20"/>
+
+    <rect x="336" y="416" width="64" height="12" rx="2" fill="url(#steelGrad)" stroke="#58595b"/>
+    <circle cx="342" cy="422" r="2.5" fill="#231f20"/>
+    <circle cx="394" cy="422" r="2.5" fill="#231f20"/>
+
+    <!-- Cylindrical Neck Connectors -->
+    <rect x="363" y="176" width="10" height="12" fill="url(#pipeGrad)" stroke="#58595b"/>
+    <rect x="363" y="462" width="10" height="12" fill="url(#pipeGrad)" stroke="#58595b"/>
+
+    <!-- Cylindrical Needle Valves on Ends -->
+    <rect x="358" y="162" width="20" height="14" rx="2" fill="url(#steelGrad)" stroke="#414042"/>
+    <ellipse cx="368" cy="155" rx="14" ry="4" fill="#231f20"/>
+
+    <rect x="358" y="474" width="20" height="14" rx="2" fill="url(#steelGrad)" stroke="#414042"/>
+    <ellipse cx="368" cy="495" rx="14" ry="4" fill="#231f20"/>
+  </g>
+
+  <!-- LOOPING BRAIDED STEEL FLEXIBLE HOSES -->
+  <!-- Top Loop (from bottom of upper line up and into top of cylinder) -->
+  <g filter="url(#shadow)">
+    <!-- Curving Braided Tube -->
+    <path d="M 260 100 C 265 10, 368 10, 368 155" fill="none" stroke="url(#braidGrad)" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 1"/>
+    <!-- Connection nut onto hose -->
+    <rect x="254" y="90" width="12" height="11" fill="url(#steelGrad)" stroke="#414042"/>
+  </g>
+
+  <!-- Bottom Loop (from bottom of cylinder down and up back into central return line) -->
+  <g filter="url(#shadow)">
+    <!-- Curving Braided Tube -->
+    <path d="M 368 494 C 368 620, 260 620, 260 554" fill="none" stroke="url(#braidGrad)" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 1"/>
+    <!-- Connection nut onto return line -->
+    <rect x="254" y="546" width="12" height="11" fill="url(#steelGrad)" stroke="#414042"/>
+  </g>
+
+  <!-- INDUSTRIAL NAMEPLATES & LABELS -->
+  <!-- Main System Info Label (Top Left) -->
+  <g filter="url(#shadow)">
+    <!-- Plaque Plate -->
+    <rect x="90" y="70" width="90" height="35" rx="2" fill="#fafafa" stroke="#bcbec0" stroke-width="1.5"/>
+    <rect x="92" y="72" width="86" height="31" fill="none" stroke="#e6e7e8" stroke-width="1"/>
+    <!-- Two corner rivet screws -->
+    <circle cx="94" cy="74" r="1.2" fill="#808285"/>
+    <circle cx="176" cy="74" r="1.2" fill="#808285"/>
+    <circle cx="94" cy="101" r="1.2" fill="#808285"/>
+    <circle cx="176" cy="101" r="1.2" fill="#808285"/>
+    <!-- text -->
+    <text x="135" y="82" font-family="monospace" font-size="6.5" font-weight="900" text-anchor="middle" fill="#231f20" letter-spacing="1">SAMPLING MANIFOLD</text>
+    <text x="135" y="91" font-family="monospace" font-size="5.5" font-weight="bold" text-anchor="middle" fill="#ed1c24" letter-spacing="0.5">TYPE-G DT-200</text>
+    <text x="135" y="99" font-family="monospace" font-size="5" text-anchor="middle" fill="#58595b">MUMBAI, INDIA</text>
+  </g>
+
+  <!-- Minor Component Label Tags -->
+  <!-- Label 1 (for Upper gauge) -->
+  <g>
+    <rect x="185" y="212" width="30" height="10" rx="1" fill="#ffffff" stroke="#bcbec0" stroke-width="0.5"/>
+    <text x="200" y="219" font-family="sans-serif" font-size="5.5" font-weight="bold" text-anchor="middle" fill="#231f20">PI-101</text>
+  </g>
+
+  <!-- Label 2 (for Lower gauge) -->
+  <g>
+    <rect x="185" y="322" width="30" height="10" rx="1" fill="#ffffff" stroke="#bcbec0" stroke-width="0.5"/>
+    <text x="200" y="329" font-family="sans-serif" font-size="5.5" font-weight="bold" text-anchor="middle" fill="#231f20">PI-102</text>
+  </g>
+
+  <!-- Label 3 (for cylinder/bomb) -->
+  <g>
+    <rect x="353" y="315" width="30" height="10" rx="1" fill="#ffffff" stroke="#bcbec0" stroke-width="0.5"/>
+    <text x="368" y="322" font-family="sans-serif" font-size="5" font-weight="bold" text-anchor="middle" fill="#231f20">BOMB-B</text>
+  </g>
+
+  <!-- Label 4 (Inlet path) -->
+  <g>
+    <rect x="90" y="180" width="35" height="10" rx="1" fill="#ffffff" stroke="#bcbec0" stroke-width="0.5"/>
+    <text x="1075" y="187" font-family="sans-serif" font-size="5" font-weight="bold" text-anchor="middle" fill="#231f20" transform="translate(-967.5, 0)">PROCESS IN</text>
+  </g>
+
+  <!-- Label 5 (Outlet path) -->
+  <g>
+    <rect x="90" y="430" width="35" height="10" rx="1" fill="#ffffff" stroke="#bcbec0" stroke-width="0.5"/>
+    <text x="1075" y="437" font-family="sans-serif" font-size="5" font-weight="bold" text-anchor="middle" fill="#231f20" transform="translate(-967.5, 0)">RETURN OUT</text>
+  </g>
+
+  <!-- Glossy metallic highlights overlay for cylinder -->
+  <path d="M 342 201 L 342 449" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M 346 201 L 346 449" stroke="#ffffff" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 390 201 L 390 449" stroke="#000000" stroke-width="0.8" stroke-linecap="round" opacity="0.15"/>
+</svg>
